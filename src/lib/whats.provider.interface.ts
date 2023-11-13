@@ -1,4 +1,4 @@
-import {Contact, Device, EventCallback} from "./whats.provider.data";
+import {Contact, Device, DeviceCreateInput, EventCallback} from "./whats.provider.data";
 
 export interface WhatsProvider {
 
@@ -8,7 +8,7 @@ export interface WhatsProvider {
 
     removeDevice(deviceId: string): Promise<void>;
 
-    createDevice(input: any): Promise<Device>;
+    createDevice(input: DeviceCreateInput): Promise<Device>;
 
     getContacts(deviceId: string): Promise<Contact[]>;
 

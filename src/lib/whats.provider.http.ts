@@ -1,5 +1,5 @@
 import axios, {AxiosInstance} from "axios";
-import {Contact, Device, EventCallback} from "./whats.provider.data";
+import {Contact, Device, DeviceCreateInput, EventCallback} from "./whats.provider.data";
 import {ProviderError} from "./whats.provider.error";
 import {WhatsProvider} from "./whats.provider.interface";
 
@@ -56,7 +56,7 @@ export class WhatsProviderHttp implements WhatsProvider {
         return;
     }
 
-    async createDevice(input: any): Promise<Device> {
+    async createDevice(input: DeviceCreateInput): Promise<Device> {
         const resp = await this.instance.post('/api/v1/admin.service/create', input);
         return {
             ...resp.data,

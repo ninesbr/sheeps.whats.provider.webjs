@@ -30,4 +30,14 @@ export interface EventMessage {
     time: Date;
 }
 
+export interface DeviceCreateInput {
+    name: string;
+    title: string;
+    avatar: string;
+    tags: string[];
+    webhooks: any[];
+    keepMessages: boolean;
+
+}
+
 export declare type EventCallback = (error: Error, msg: EventMessage | null) => Promise<void>;
