@@ -24,8 +24,7 @@
   "author": "devops nines",
   "license": "MIT",
   "dependencies": {
-    "google-protobuf": "^3.21.2",
-    "grpc-web": "^1.5.0"
+    "axios": "^1.6.1"
   },
   "bugs": {
     "url": "https://github.com/ninesbr/sheeps.whats.provider.webjs/issues"
