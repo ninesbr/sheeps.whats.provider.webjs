@@ -7,8 +7,7 @@
   "type": "commonjs",
   "scripts": {
     "compile:ts": "rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json",
-    "compile:copy": "cp src/lib/message_* dist/lib/es5/lib/. && cp src/lib/message_* dist/lib/es6/lib/.",
-    "compile": "npm run compile:ts && npm run compile:copy"
+    "compile": "npm run compile:ts"
   },
   "devDependencies": {
     "axios": "^1.6.1",
