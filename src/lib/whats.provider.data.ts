@@ -1,21 +1,22 @@
 export interface Device {
-    id:           string;
-    name:         string;
-    title:        string;
-    avatar:       string;
-    accessKey:    string;
-    tags:         string[];
-    webhooks:     any[];
-    createdAt:    Date;
-    updatedAt:    Date;
-    enabled:      boolean;
+    id: string;
+    name: string;
+    title: string;
+    avatar: string;
+    accessKey: string;
+    tags: string[];
+    webhooks: any[];
+    createdAt: Date;
+    updatedAt: Date;
+    enabled: boolean;
     keepMessages: boolean;
-    status?:       boolean;
+    status?: boolean;
     statusString?: string;
-    qrcode?:       string;
-    waId?:         string;
-    waName?:       string;
+    qrcode?: string;
+    waId?: string;
+    waName?: string;
 }
+
 export interface Contact {
     id: string;
     name: string;
@@ -23,6 +24,7 @@ export interface Contact {
     updatedAt: Date;
     createdAt: Date;
 }
+
 export interface EventMessage {
     deviceId: string;
     name: string;
@@ -40,4 +42,4 @@ export interface DeviceCreateInput {
 
 }
 
-export declare type EventCallback = (error: Error, msg: EventMessage | null) => Promise<void>;
+export declare type EventCallback = (error: Error, msg: EventMessage | null) => void;

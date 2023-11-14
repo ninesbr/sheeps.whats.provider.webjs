@@ -10,7 +10,6 @@
     "compile": "npm run compile:ts"
   },
   "devDependencies": {
-    "axios": "^1.6.1",
     "typescript": "^4.8.4"
   }
 }

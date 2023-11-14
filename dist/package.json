@@ -24,7 +24,6 @@
   "author": "devops nines",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.1"
   },
   "bugs": {
     "url": "https://github.com/ninesbr/sheeps.whats.provider.webjs/issues"

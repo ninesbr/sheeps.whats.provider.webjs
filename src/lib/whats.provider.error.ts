@@ -10,4 +10,13 @@ export class ProviderError extends Error {
         this.statusCode = statusCode;
         this.errors = errors;
     }
+
+    static of(args: { code?: string, statusCode?: number, message?: string, errors?: string[] }): ProviderError {
+        return new ProviderError(
+            args.code,
+            args.statusCode,
+            args.message,
+            args.errors
+        )
+    }
 }
